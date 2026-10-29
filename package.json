@@ -1,0 +1,18 @@
+{
+  "name": "magpie-agent-office",
+  "version": "0.1.0",
+  "description": "A little office in magpie's window: which Claude Code and Codex sessions are working, waiting on you, or done.",
+  "keywords": ["magpie-plugin"],
+  "license": "MIT",
+  "bin": { "agent-office": "server/office.mjs" },
+  "scripts": { "test": "node --test scripts/test-waiting.mjs" },
+  "magpie": {
+    "page": {
+      "title": "Agent Office",
+      "titles": { "zh": "Agent 办公室", "zh-TW": "Agent 辦公室" },
+      "file": "page/index.html",
+      "icon": "page/icon.svg"
+    },
+    "permissions": ["usage:summary"]
+  }
+}

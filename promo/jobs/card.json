@@ -1,0 +1,1 @@
+{"width": 1440, "height": 810, "scale": 1.3334, "name": "card", "query": "lang=zh&dark=0&demo=1", "frames": 120, "az0": 24, "az1": 24, "click": {"frame": 18, "selector": ".scene-tag.s-working"}, "out":"public/footage/card.mp4"}

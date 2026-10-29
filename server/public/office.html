@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Office</title>
+<link rel="icon" href="sprites/mascot_claude_solo.webp">
+<link rel="stylesheet" href="office.css">
+<script src="office.js" defer></script>
+<div class="app">
+  <section class="floor">
+    <header class="floor-head">
+      <img class="logo" src="sprites/mascot_claude_solo.webp" alt="">
+      <div>
+        <h1 data-t="title">Agent 办公室</h1>
+        <span class="note" id="note"></span>
+      </div>
+    </header>
+    <nav class="office-toolbar" aria-label="Office view">
+      <label class="agent-filter"><span data-t="filter">Agent</span><select id="agentFilter"><option value="all" data-t="allAgents">全部 Agent</option><option value="claude">Claude</option><option value="codex">Codex</option><option value="gemini">Gemini</option><option value="grok">Grok</option><option value="antigravity">Antigravity</option></select></label>
+      <button id="resetView" type="button" data-t="reset">复位视角</button>
+    </nav>
+    <div id="office3d" class="office3d" hidden>
+      <div id="sceneLabels" class="scene-labels"></div>
+      <div class="scene-help" data-t="sceneHelp">拖拽旋转 · 滚轮缩放 · 双击复位</div>
+      <div class="scene-legend"><span class="s-working" data-t="working">进行中</span><span class="s-waiting" data-t="waiting">等你</span><span class="s-done" data-t="done">刚完成</span></div>
+      <div id="sceneStatus" class="scene-status" role="status"></div>
+    </div>
+    <div id="sessionInfo" class="session-info" hidden></div>
+    <div class="desks" id="desks"></div>
+    <div class="lounge" id="loungeBox">
+      <div class="lounge-label" data-t="lounge">休息区</div>
+      <div class="lounge-room">
+        <img class="lounge-art" id="loungeArt" alt="">
+        <div class="lounge-crowd" id="lounge"></div>
+      </div>
+    </div>
+  </section>
+  <aside class="side">
+    <div class="usage card" id="usage">
+      <div class="u-main"><small data-t="tokensToday">magpie 今日 Token</small><b id="uTokens">—</b></div>
+      <div><small data-t="callsToday">请求</small><b id="uCalls">—</b></div>
+      <div><small data-t="costToday">花费</small><b id="uCost">—</b></div>
+    </div>
+    <div class="counts card">
+      <div class="c-working"><b id="nWorking">0</b><small data-t="working">进行中</small></div>
+      <div class="c-waiting"><b id="nWaiting">0</b><small data-t="waiting">等你</small></div>
+      <div class="c-done"><b id="nDone">0</b><small data-t="done">刚完成</small></div>
+      <div><b id="nAll">0</b><small data-t="all">总计</small></div>
+    </div>
+    <h2 data-t="list">会话</h2>
+    <ol class="list" id="list"></ol>
+  </aside>
+</div>

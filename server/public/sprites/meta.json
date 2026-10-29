@@ -1,0 +1,119 @@
+{
+ "back_dark": [
+  560,
+  500
+ ],
+ "back_light": [
+  560,
+  500
+ ],
+ "front_dark_aborted": [
+  560,
+  500
+ ],
+ "front_dark_done": [
+  560,
+  500
+ ],
+ "front_dark_off": [
+  560,
+  500
+ ],
+ "front_dark_stalled": [
+  560,
+  500
+ ],
+ "front_dark_waiting": [
+  560,
+  500
+ ],
+ "front_dark_working": [
+  560,
+  500
+ ],
+ "front_light_aborted": [
+  560,
+  500
+ ],
+ "front_light_done": [
+  560,
+  500
+ ],
+ "front_light_off": [
+  560,
+  500
+ ],
+ "front_light_stalled": [
+  560,
+  500
+ ],
+ "front_light_waiting": [
+  560,
+  500
+ ],
+ "front_light_working": [
+  560,
+  500
+ ],
+ "lounge_dark": [
+  1200,
+  420
+ ],
+ "lounge_light": [
+  1200,
+  420
+ ],
+ "mascot_claude_aborted": [
+  560,
+  500
+ ],
+ "mascot_claude_done": [
+  560,
+  500
+ ],
+ "mascot_claude_off": [
+  560,
+  500
+ ],
+ "mascot_claude_solo": [
+  196,
+  213
+ ],
+ "mascot_claude_waiting": [
+  560,
+  500
+ ],
+ "mascot_claude_working": [
+  560,
+  500
+ ],
+ "mascot_codex_aborted": [
+  560,
+  500
+ ],
+ "mascot_codex_done": [
+  560,
+  500
+ ],
+ "mascot_codex_off": [
+  560,
+  500
+ ],
+ "mascot_codex_solo": [
+  196,
+  213
+ ],
+ "mascot_codex_waiting": [
+  560,
+  500
+ ],
+ "mascot_codex_working": [
+  560,
+  500
+ ],
+ "glow": [
+  37.5,
+  45.6
+ ],
+ "v": "4ea9695288"
+}
